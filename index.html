@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Mars Weather Data</h1>
+        <div class="calendar-container">
+            <label for="calendar">Select Date:</label>
+            <input type="text" id="calendar">
+        </div>
+        <div class="cards">
+            <div class="card" id="sol">
+                <h2>Sol</h2>
+                <p class="data"></p>
+            </div>
+            <div class="card" id="minTemp">
+                <h2>Min Temperature</h2>
+                <p class="data"></p>
+            </div>
+            <div class="card" id="maxTemp">
+                <h2>Max Temperature</h2>
+                <p class="data"></p>
+            </div>
+            <div class="card" id="pressure">
+                <h2>Pressure</h2>
+                <p class="data"></p>
+            </div>
+            <div class="card" id="windSpeed">
+                <h2>Wind Speed</h2>
+                <p class="data"></p>
+            </div>
+            <div class="card" id="atmoOpacity">
+                <h2>Atmospheric Opacity</h2>
+                <p class="data"></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include PapaParse from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>

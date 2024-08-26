@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #934f3c, #c04e3f); /* Martian colors */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f7f2e7; /* Light Martian background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.container:hover {
+    background-color: #e0d1c3; /* Slightly darker Martian color on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #c04e3f; /* Martian red color */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#calendar {
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #e07a5f; /* Martian red color */
+    background-color: #f7f2e7; /* Light Martian background */
+    color: #c04e3f; /* Martian red color */
+    font-size: 1em;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#calendar:hover {
+    background-color: #d6bda4; /* Slightly darker Martian color on hover */
+    border-color: #c04e3f; /* Darker Martian red */
+}
+
+/* Flexbox layout for cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Styling for individual cards */
+.card {
+    background: #f7f2e7; /* Light Martian background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #e07a5f; /* Martian red color */
+}
+
+.data {
+    font-size: 1.2em;
+    color: #c04e3f; /* Martian red color */
+}
+
+/* Additional styling for the calendar */
+.flatpickr-calendar {
+    z-index: 1000; /* Ensure the calendar dropdown is visible */
+    border-radius: 12px;
+    background-color: #f7f2e7; /* Light Martian background */
+    border: 2px solid #e07a5f; /* Martian red color */
+}
+
+.flatpickr-day:hover {
+    background-color: #e07a5f; /* Martian red color */
+    color: #fff;
+}
